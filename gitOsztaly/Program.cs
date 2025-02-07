@@ -19,6 +19,26 @@ namespace gitOsztaly
 			konyv1.Arnoveles(1000);
 
             Console.WriteLine("\n" + konyv1.ToString() + "\n" + konyv1.HanyOldalMaradt(20));
-        }
+
+            Console.WriteLine();
+			Console.WriteLine("------------------------------------------------------------");
+			Console.WriteLine();
+
+			Film film1 = new("Scream 1", "Wes Craven", 111, "Horror", true);
+			Film film2 = new("Once upon a silent life", "Amy Stake");
+
+			Console.WriteLine(film1.ToString() + "\n" + film2.ToString());
+
+			film2.HosszNovelese(20);
+			film2.MufajModositas("Thriller");
+
+			Console.WriteLine("\n" + film2.ToString());
+
+			Console.WriteLine();
+			Console.WriteLine("------------------------------------------------------------");
+			Console.WriteLine();
+
+
+		}
 	}
 }
