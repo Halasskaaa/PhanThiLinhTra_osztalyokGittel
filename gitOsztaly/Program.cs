@@ -50,6 +50,22 @@ namespace gitOsztaly
 			karakter2.Szintlepes();
 
             Console.WriteLine(karakter2 + "\n" + karakter1);
-        }
+
+			Console.WriteLine();
+			Console.WriteLine("------------------------------------------------------------");
+			Console.WriteLine();
+
+			Urhajo urhajo1 = new("XYZ-134", 200, 40, 65);
+			Urhajo urhajo2 = new("Legion", 50);
+
+            Console.WriteLine("\n" + urhajo1.ToString() + "\n" + urhajo2.ToString());
+
+			urhajo2.Indulas();
+			urhajo1.Tankolas(21);
+			urhajo1.Landolas();
+
+			Console.WriteLine("\n" + urhajo1.ToString() + "\n" + urhajo2.ToString());
+
+		}
 	}
 }

@@ -49,7 +49,7 @@ namespace gitOsztaly
 		}
 		public int HanyOldalMaradt(int elolvasott)
 		{
-			return oldalszam - elolvasott;
+			return oldalszam -= elolvasott;
 		}
 
 		public override string ToString()
