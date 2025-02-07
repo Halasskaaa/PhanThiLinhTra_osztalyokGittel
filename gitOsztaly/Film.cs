@@ -41,11 +41,11 @@ namespace gitOsztaly
 		{
 			if (megjelent == true)
 			{
-                Console.WriteLine("A film megkezdődött.");
+                Console.WriteLine($"A(z) {nev} nevezetű film megkezdődött.");
             }
 			else
 			{
-                Console.WriteLine("A film nem kezdődött meg.");
+                Console.WriteLine($"A(z) {nev} nevezetű film nem létezik.");
             }
 		}
 		public void MufajModositas(string ujMufaj)

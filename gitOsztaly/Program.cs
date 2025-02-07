@@ -66,6 +66,24 @@ namespace gitOsztaly
 
 			Console.WriteLine("\n" + urhajo1.ToString() + "\n" + urhajo2.ToString());
 
-		}
-	}
+            Console.WriteLine();
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine();
+
+			KemKuldetes kem1 = new("korona", "Oroszország", 9, 19);
+			KemKuldetes kem2 = new("kréta", "Olaszország");
+
+            Console.WriteLine("\n" + kem1.ToString() + "\n" + kem2.ToString());
+
+			kem1.KuldetesInditasa();
+            kem2.KuldetesInditasa();
+
+            kem1.VeszelySzintNovelese(1);
+            kem2.SikerEsejNovelese(20);
+
+            Console.WriteLine("\n" + kem1.ToString() + "\n" + kem2.ToString());
+
+
+        }
+    }
 }
