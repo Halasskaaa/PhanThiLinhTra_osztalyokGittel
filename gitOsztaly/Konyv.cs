@@ -38,6 +38,24 @@ namespace gitOsztaly
 			kiadasEve = DateTime.Now.Year;
 			ar = 3000;
 		}
+
+		public void Arnoveles(int osszeg)
+		{
+			ar += osszeg;
+		}
+		public void Kezdvezmeny(double szazalek)
+		{
+			int csokkentes = Convert.ToInt16(ar * (szazalek/ 100));
+		}
+		public int HanyOldalMaradt(int elolvasott)
+		{
+			return oldalszam - elolvasott;
+		}
+
+		public override string ToString()
+		{
+			return $"Címe: {cim}, Szerző: {szerzo}, Oldalszám: {oldalszam}, Ár: {ar}";
+		}
 	}
 
 }
