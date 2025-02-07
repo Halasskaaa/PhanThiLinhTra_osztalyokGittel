@@ -32,13 +32,24 @@ namespace gitOsztaly
 			film2.HosszNovelese(20);
 			film2.MufajModositas("Thriller");
 
+            film1.Jatszas();
+
 			Console.WriteLine("\n" + film2.ToString());
 
 			Console.WriteLine();
 			Console.WriteLine("------------------------------------------------------------");
 			Console.WriteLine();
 
+			Karakter karakter1 = new("Myers", 100, 10000, 100000);
+			Karakter karakter2 = new("Laurie Strode", 200);
 
-		}
+            Console.WriteLine("\n" + karakter1.ToString() + "\n" + karakter2.ToString());
+
+			karakter2.Tamadas();
+			karakter1.Gyogyulas(5000);
+			karakter2.Szintlepes();
+
+            Console.WriteLine(karakter2 + "\n" + karakter1);
+        }
 	}
 }
